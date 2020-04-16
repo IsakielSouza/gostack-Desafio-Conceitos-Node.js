@@ -75,7 +75,7 @@ app.delete(`/repositories/:id`, (request, response) => {
      const { id } = request.params;
 
      const findRepositoryIndex = repositories.findIndex(repository =>
-      repository.id = id
+      repository.id === id
     );
 
     if (findRepositoryIndex === -1) {
